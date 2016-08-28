@@ -1,15 +1,71 @@
 /*General*/
+body{
+    font-family: Tahoma, Arial, sans-serif;
+}
 
+.container {
+    min-width: 1000px;
+}
 
+a{
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
 
 /*Larry - Navigation*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    font-size: 24px;
+    padding: 8px 50px;
+    border-bottom: 1px solid #DDD;
+}
 
+.nav-bar>.left, .nav-bar>.right{
+    display: flex;
+}
+.nav-bar>.right{
+    font-size: 20px;
+    margin: 14px 0;
+}
+
+.nav-bar>ul>li{
+    margin: 0 8px;
+}
+
+.nav-bar .brand{
+    font-size: 24px;
+}
 
 /*Anqi - Banner*/
 
 
 /*Anthony - Self-test*/
+.box{
+    width:300px;
+    height:50px;
+    margin-left:100px;
+    position:relative;
+}
 
+.main{
+    color: white;
+    background: green;
+    width:100px;
+    height: 50px;
+    left:10px;
+    top:25px;
+    position:absolute;
+    border:none;
+}
+
+.words{
+    left:130px;
+    top:25px;
+    position:absolute;
+}
 
 /*Kevin - Article*/
 
