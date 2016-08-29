@@ -118,13 +118,11 @@ a{
     display:flex;
     justify-content: space-between;
     background-color:#FFB6C1
-    color£ºwhite
     list-style:none;}
 
 .footer {
     clear:both;
-    background-color:#FFB6C1
-    color£ºwhite
+    color:black
     text-align:center;
     padding:5px; 
 }
