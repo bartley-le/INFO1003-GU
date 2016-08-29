@@ -41,6 +41,18 @@ a{
 
 /*Anqi - Banner*/
 
+.pager {
+     width: 878px;
+     height: 368px;
+     position: relative;
+     top: 5px;
+     left: 400px; 
+     list-style: none;
+       
+}
+
+	
+
 
 /*Anthony - Self-test*/
 .box{
@@ -123,4 +135,12 @@ a{
     clear:both;
     text-align:center;
     padding:5px; 
+}
+
+.body {
+
+display:box;
+
+box-orient:horizontal;
+width:400px;
 }
