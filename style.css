@@ -114,16 +114,16 @@ a{
 
 
 /*Jake - Footer*/
+.flex{
+    display:flex;
+    justify-content: space-between;
+    background-color:#FFB6C1
+    color£ºwhite
+    list-style:none;}
+
 .footer {
-    background-color:black;
-    color:white;
     clear:both;
     text-align:center;
     padding:5px; 
 }
 
-.flex{
-    display:flex;
-    justify-content: space-between;
-    background-color:#FFB6C1
-    list-style:none;}
