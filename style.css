@@ -41,6 +41,18 @@ a{
 
 /*Anqi - Banner*/
 
+.pager {
+     width: 878px;
+     height: 368px;
+     position: relative;
+     top: 5px;
+     left: 400px; 
+     list-style: none;
+       
+}
+
+	
+
 
 /*Anthony - Self-test*/
 .box{
