@@ -126,5 +126,5 @@ a{
     display:flex;
     width:800px;
     margin:300px;
-    padding:5px;
+    padding:absolute;
     list-style:none;}
