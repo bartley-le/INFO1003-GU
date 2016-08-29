@@ -124,7 +124,5 @@ a{
 
 .flex{
     display:flex;
-    width:800px;
-    margin:300px;
-    padding:absolute;
+    justify-content: space-between;
     list-style:none;}
