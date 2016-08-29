@@ -125,6 +125,6 @@ a{
 .flex{
     display:flex;
     width:800px;
-    margin:0;
-    padding:0;
+    margin:300px;
+    padding:5px;
     list-style:none;}
