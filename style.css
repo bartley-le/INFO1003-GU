@@ -81,29 +81,11 @@ a{
 
 /*Kevin - Article*/
 .sectionblock{
-    background-image:url("img/4a392e6ffa5cc6543308f.jpg");
-    background-size: 736px 770px;
-    background-position: center center;
-    margin-bottom: 7px;
-        margin-left: auto;
-    margin-right: auto;
-    width: 880px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 1;
     height: 605.78px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding:3px;
-    font-style: italic;
 }
 
 .picture{
-    display:block;
-    margin:0 auto;
-    width:880px;
-    height:550px;
-    opacity: :0.1;
+    width:100%;
 }
 
 .bigtitle{
@@ -111,20 +93,7 @@ a{
     line-height: 1.2;
     font-weight: 200;
     letter-spacing: normal;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    color:#F3E5F5;
-}
-
-.link{
-    display: block;
-    margin: auto;
-    text-align:center;
-}
-
-.texts{
-    text-align: center;
-    font-style: oblique;
+    color:white
 }
 
 
