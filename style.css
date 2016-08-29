@@ -118,6 +118,16 @@ a{
     background-color:black;
     color:white;
     clear:both;
+    background-color:#FFB6C1
+    color£ºwhite
     text-align:center;
     padding:5px; 
+}
+
+.boxs {
+
+display:box;
+
+box-orient:horizontal;
+width:400px;
 }
