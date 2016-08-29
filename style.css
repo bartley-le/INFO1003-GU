@@ -83,27 +83,32 @@ a{
 
 /*Anthony - Self-test*/
 .box{
-    width:300px;
-    height:50px;
-    margin-left:100px;
-    position:relative;
+    height:100px;
+	background-color:gray;
+	padding-left:90px;
+	padding-right:90px;
+	padding-top:90px;
+	padding-bottom: 90px;
+}
+
+.box2{
+	height:40px;
+	background-color:blue;
+    padding:30px;
 }
 
 .main{
     color: white;
     background: green;
-    width:100px;
-    height: 50px;
-    left:10px;
-    top:25px;
-    position:absolute;
+    width:200px;
+    height: 40px;
     border:none;
+	float: left;
 }
 
 .words{
-    left:130px;
-    top:25px;
-    position:absolute;
+	float:left;
+	padding-left:100px;
 }
 
 /*Kevin - Article*/
