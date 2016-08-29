@@ -122,10 +122,9 @@ a{
     padding:5px; 
 }
 
-.boxs {
-
-display:box;
-
-box-orient:horizontal;
-width:400px;
-}
+.flex{
+    display:flex;
+    width:800px;
+    margin:0;
+    padding:0;
+    list-style:none;}
