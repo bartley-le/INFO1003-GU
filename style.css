@@ -41,15 +41,42 @@ a{
 
 /*Anqi - Banner*/
 
-.pager {
-     width: 878px;
-     height: 368px;
-     position: relative;
-     top: 5px;
-     left: 400px; 
-     list-style: none;
-       
+.banner{
+    position: relative;
 }
+
+
+.banner-img {
+    
+     max-width: 100%;
+     margin: auto 0;
+}
+
+.banner_textbox{
+    position:absolute;
+    top:40px;
+    right:100px;
+    width: 400px;
+    height:initial;
+	padding: 20px;
+    background: deepskyblue;
+    border-left-width: 10px;
+    border-style: solid;
+    border-color: orange;
+}
+
+.banner_title {
+    margin: auto 10px;
+    font-size: 20px;
+}
+
+.banner_text {
+    margin: auto 10px;
+    margin-top: 25px;
+    font-size:10px;
+}
+
+
 
 	
 
