@@ -125,4 +125,5 @@ a{
 .flex{
     display:flex;
     justify-content: space-between;
+    background-color:#FFB6C1
     list-style:none;}
