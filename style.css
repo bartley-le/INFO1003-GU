@@ -80,8 +80,12 @@ a{
 }
 
 /*Kevin - Article*/
-.sectionblock{
-    height: 605.78px;
+.sectioncontent{
+    color: white;
+    background-color: grey;
+    padding-left:100px;
+    padding-top:15px;
+    padding-bottom:20px;
 }
 
 .picture{
@@ -89,11 +93,23 @@ a{
 }
 
 .bigtitle{
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 200;
-    letter-spacing: normal;
-    color:white
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+.sectioncontent p{
+    color: white;
+    font-size:20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.link{
+    color:skyblue;
+    font-size:15px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 
