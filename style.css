@@ -114,10 +114,11 @@ a{
 /*Kevin - Article*/
 .sectioncontent{
     color: white;
-    background-color: grey;
+    background-color:grey;
     padding-left:100px;
     padding-top:15px;
     padding-bottom:20px;
+    margin-top:-5px;
 }
 
 .picture{
@@ -125,9 +126,10 @@ a{
 }
 
 .bigtitle{
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 25px;
     letter-spacing: 1px;
+    color:white;
 
 }
 
