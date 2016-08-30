@@ -1,5 +1,5 @@
 /*General*/
-body{
+body {
     font-family: Tahoma, Arial, sans-serif;
 }
 
@@ -7,10 +7,34 @@ body{
     min-width: 1000px;
 }
 
-a{
-    color: black;
+a {
     text-decoration: none;
     cursor: auto;
+}
+
+button.rnd-btn {
+    border-radius: 10px;
+    padding: 0 40px;
+    color: white;
+    background-color: #689F38;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+}
+
+ul.hor-list{
+    display: inline;
+}
+ul.hor-list>li{
+    display: inline;
+}
+
+ul.hor-list li+li:before {
+    content: 'â€¢';
+    margin-right: 3px;
+    padding: 0 3px;
+    font-family: Arial, serif;
+    color: #bbb;
 }
 
 /*Larry - Navigation*/
@@ -23,145 +47,148 @@ a{
     border-bottom: 1px solid #DDD;
 }
 
-.nav-bar>.left, .nav-bar>.right{
+.nav-bar a {
+    color: black;
+}
+
+.nav-bar > .left, .nav-bar > .right {
     display: flex;
 }
-.nav-bar>.right{
+
+.nav-bar > .right {
     font-size: 20px;
     margin: 14px 0;
 }
 
-.nav-bar>ul>li{
+.nav-bar > ul > li {
     margin: 0 8px;
 }
 
-.nav-bar .brand{
+.nav-bar .brand {
     font-size: 24px;
 }
 
 /*Anqi - Banner*/
-
-.banner{
+.banner {
     position: relative;
 }
 
-
-.banner-img {
-    
-     max-width: 100%;
-     margin: auto 0;
+.banner .banner-img {
+    max-width: 100%;
+    margin: auto 0;
 }
 
-.banner_textbox{
-    position:absolute;
-    top:40px;
-    right:100px;
-    width: 400px;
-    height:initial;
-	padding: 20px;
+.banner .banner-text {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    width: 350px;
+    padding: 30px 20px;
     background: deepskyblue;
-    border-left-width: 10px;
-    border-style: solid;
-    border-color: orange;
+    border-left: 5px solid orange;
 }
 
-.banner_title {
-    margin: auto 10px;
-    font-size: 20px;
+.banner .banner-text > h1 {
+    font-weight: bolder;
+    font-size: 24px;
 }
 
-.banner_text {
-    margin: auto 10px;
+.banner .banner-text > p {
     margin-top: 25px;
-    font-size:10px;
 }
-
-
-
-	
-
 
 /*Anthony - Self-test*/
-.box{
-    height:100px;
-	background-color:gray;
-	padding-left:90px;
-	padding-right:90px;
-	padding-top:90px;
-	padding-bottom: 90px;
+.box {
+    background-color: #f9f9f9;
+    padding: 90px 0;
 }
 
-.box2{
-	height:40px;
-	background-color:blue;
-    padding:30px;
+.box2 {
+    margin: 0 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 60px;
+    display: flex;
 }
 
-.main{
-    color: white;
-    background: green;
-    width:200px;
-    height: 40px;
-    border:none;
-	float: left;
-}
-
-.words{
-	float:left;
-	padding-left:100px;
+.box2 > p {
+    padding-left: 100px;
 }
 
 /*Kevin - Article*/
-.sectioncontent{
+.section-content {
     color: white;
-    background-color:grey;
-    padding-left:100px;
-    padding-top:15px;
-    padding-bottom:20px;
-    margin-top:-5px;
+    background-color: grey;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: -5px;
 }
 
-.picture{
-    width:100%;
+.picture {
+    width: 100%;
 }
 
-.bigtitle{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 25px;
-    letter-spacing: 1px;
-    color:white;
-
+.section-content > * {
+    padding: 7px;
 }
 
-.sectioncontent p{
+.section-content > h3 {
+    font-size: 26px;
     color: white;
-    font-size:20px;
-    font-family: "Times New Roman", Times, serif;
+
 }
 
-.link{
-    color:skyblue;
-    font-size:15px;
-    font-style: italic;
-    text-decoration: underline;
+.section-content > p {
+    color: white;
 }
 
+.section-content > a {
+    color: #00BFA5;
+    font-size: 15px;
+}
 
 /*Jake - Footer*/
-.footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    background-color:#FFB6C1
-    color£ºwhite
-    text-align:center;
-    padding:5px; 
+footer {
+    background-color: #f2f2f2;
+    padding: 30px 90px;
 }
 
-.boxs {
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
 
-display:box;
+.footer-column {
+    padding: 5px;
+    list-style: none;
+}
 
-box-orient:horizontal;
-width:400px;
+.footer-column > h6 {
+    color: #333;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+.footer-column li {
+    padding: 5px 0;
+}
+
+footer a {
+    color: #666;
+    font-size: 1em;
+}
+
+footer hr{
+    border: 1px solid #CCC;
+}
+
+/*Jake - Footer*/
+footer>.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span.copyright{
+    color: #666;
 }
