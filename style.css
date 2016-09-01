@@ -1,6 +1,7 @@
 /*General*/
 body {
     font-family: Tahoma, Arial, sans-serif;
+    background-color: #FCFCFC;
 }
 
 .container {
@@ -22,14 +23,15 @@ button.rnd-btn {
     border: none;
 }
 
-ul.hor-list{
-    display: inline;
-}
-ul.hor-list>li{
+ul.hor-list {
     display: inline;
 }
 
-ul.hor-list li+li:before {
+ul.hor-list > li {
+    display: inline;
+}
+
+ul.hor-list li + li:before {
     content: '•';
     margin-right: 3px;
     padding: 0 3px;
@@ -172,15 +174,26 @@ footer a {
     font-size: 1em;
 }
 
-footer hr{
+footer hr {
     border: 1px solid #CCC;
 }
 
-footer>.footer-bottom{
+footer > .footer-bottom {
     display: flex;
     justify-content: space-between;
 }
 
-footer span.copyright{
+footer span.copyright {
     color: #666;
 }
+
+/*Jake - FAQ*/
+
+/*Anqi - Privacy policy*/
+
+/*Anthony - Contact us*/
+
+/*Kevin - Sign up*/
+
+/*Larry - Site map*/
+
