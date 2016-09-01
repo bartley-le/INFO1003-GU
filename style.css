@@ -119,9 +119,7 @@ ul.hor-list li+li:before {
 .section-content {
     color: white;
     background-color: grey;
-    padding-left: 100px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding: 30px 150px;;
     margin-top: -5px;
 }
 
@@ -130,17 +128,12 @@ ul.hor-list li+li:before {
 }
 
 .section-content > * {
-    padding: 7px;
+    padding: 10px;
+    color: white;
 }
 
 .section-content > h3 {
     font-size: 26px;
-    color: white;
-
-}
-
-.section-content > p {
-    color: white;
 }
 
 .section-content > a {
