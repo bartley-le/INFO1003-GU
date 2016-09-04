@@ -194,5 +194,64 @@ footer span.copyright {
 /*Anthony - Contact us*/
 
 /*Kevin - Sign up*/
+body{
+    background-color: #7986CB;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+}
+.signup-content{
+    background-color: #E8EAF6;
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+
+input{
+    display:block;
+    text-align: center;
+    height:30px;
+    margin:0 auto;
+    padding:6px;
+    width:20%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+button{
+    display:block;
+   margin:0 auto;
+   border: none;
+   border-style: solid;
+   border-width: 1px;
+   margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.textdiv{
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+
+}
+p{
+    text-align: center;
+    color:white;
+    font-style: italic;
+}
+.signup{
+    background-color: black;
+    height:100px;
+    padding-top:20px;
+}
+
+
+
 
 /*Larry - Site map*/
