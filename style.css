@@ -228,7 +228,7 @@ input{
     box-sizing: border-box;
     font-size: 15px;
 }
-button{
+.login{
     display:block;
    margin:0 auto;
    border: none;
