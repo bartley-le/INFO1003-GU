@@ -205,7 +205,7 @@ footer span.copyright {
 /*Anthony - Contact us*/
 
 /*Kevin - Sign up*/
-body{
+.signupbody{
    
     font-family:Tahoma, Arial, sans-serif;
     font-size: 16px;
@@ -216,7 +216,7 @@ body{
     padding-bottom: 10px;
 }
 
-input{
+.signupinput{
     display:block;
     text-align: center;
     height:30px;
@@ -245,13 +245,13 @@ input{
 .textdiv{
     margin-bottom: 20px;
 }
-h1{
+.signuph1{
     text-align: center;
     color:white;
     font-size: 50px;
 
 }
-p{
+.signupp{
     text-align: center;
     color:white;
     font-style: italic;
