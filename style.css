@@ -110,6 +110,8 @@ ul.hor-list li + li:before {
     color: white;
 }
 
+
+
 /*Anthony - Self-test*/
 .box {
     background-color: #f9f9f9;
@@ -201,6 +203,23 @@ footer span.copyright {
 /*Jake - FAQ*/
 
 /*Anqi - Privacy policy*/
+.privacy{
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+
+.privacy-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.privacy-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+}
 
 /*Anthony - Contact us*/
 
