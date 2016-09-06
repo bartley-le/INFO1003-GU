@@ -99,6 +99,17 @@ ul.hor-list li + li:before {
     margin-top: 25px;
 }
 
+.banner h1.banner-heading{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
 /*Anthony - Self-test*/
 .box {
     background-color: #f9f9f9;
@@ -194,5 +205,67 @@ footer span.copyright {
 /*Anthony - Contact us*/
 
 /*Kevin - Sign up*/
+body{
+   
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+}
+.signup-content{
+    background-color: #E8EAF6;
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+
+input{
+    display:block;
+    text-align: center;
+    height:30px;
+    margin:0 auto;
+    padding:5px;
+    width:20%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.login{
+    display:block;
+   margin:0 auto;
+   border: none;
+   border-style: solid;
+   border-width: 1px;
+   margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.textdiv{
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+
+}
+p{
+    text-align: center;
+    color:white;
+    font-style: italic;
+}
+.signup{
+    background-color: black;
+    height:100px;
+    padding-top:20px;
+}
+
+
+
 
 /*Larry - Site map*/
+.site-map {
+
+}

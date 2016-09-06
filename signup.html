@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+	<div class="signup">
+		<h1>Please sign up here</h1>
+		<br>
+		<p>Fill in your detailed information</p>
+	</div>
+	<div class="signup-content">
+		<form method="post" class="form-signup" action="">
+			<div class="textdiv">
+				<input type="text" class="username" name="username" id="username" placeholder="Username" autocomplete="off">
+			</div>
+			<div class="textdiv">
+				<input type="password" class="password" name="password" id="password" placeholder="Password" autocomplete="off">
+			</div>
+			<div class="textdiv">
+				<input type="password" class="verifypassword" name="verifypassword" id="verifypassword" placeholder="Verify Password" autocomplete="off">
+			</div>
+			<div class="textdiv">
+				<input type="text" class="firstname" name="firstname" id="firstname" placeholder="Firstname" autocomplete="off">
+			</div>
+			<div class="textdiv">
+				<input type="text" class="lastname" name="lastname" id="lastname" placeholder="Lastname" autocomplete="off">
+			</div>
+			<div class="textdiv">
+				<input type="text" class="e-mail" name="e-mail" id="e-mail" placeholder="E-mail address" autocomplete="off">
+			</div>
+			<div class="submitdiv">
+				<button type="submit" class="login">Register</button>
+			</div>
+			<div class="submitdiv">
+				<button type="submit" class="login">reset</button>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
