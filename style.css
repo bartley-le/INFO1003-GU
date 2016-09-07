@@ -1,44 +1,3 @@
-/*General*/
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #FCFCFC;
-}
-
-.container {
-    min-width: 1000px;
-}
-
-a {
-    text-decoration: none;
-    cursor: auto;
-}
-
-button.rnd-btn {
-    border-radius: 10px;
-    padding: 0 40px;
-    color: white;
-    background-color: #689F38;
-    height: 60px;
-    font-size: 24px;
-    border: none;
-}
-
-ul.hor-list {
-    display: inline;
-}
-
-ul.hor-list > li {
-    display: inline;
-}
-
-ul.hor-list li + li:before {
-    content: '•';
-    margin-right: 3px;
-    padding: 0 3px;
-    font-family: Arial, serif;
-    color: #bbb;
-}
-
 /*Larry - Navigation*/
 .nav-bar {
     display: flex;
@@ -76,7 +35,7 @@ ul.hor-list li + li:before {
 }
 
 .banner .banner-img {
-    max-width: 100%;
+    width: 100%;
     margin: auto 0;
 }
 
@@ -101,14 +60,18 @@ ul.hor-list li + li:before {
 
 .banner h1.banner-heading{
     position: absolute;
+    margin: 0;
     left: 0;
-    top: 0;
+    top: 45%;
     width: 100%;
-    height: 100%;
+    height: 55%;
     text-align: center;
     vertical-align: middle;
+    text-shadow: 2px 2px 2px black;
     color: white;
 }
+
+
 
 /*Anthony - Self-test*/
 .box {
@@ -201,11 +164,28 @@ footer span.copyright {
 /*Jake - FAQ*/
 
 /*Anqi - Privacy policy*/
+.privacy{
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+
+.privacy-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.privacy-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+}
 
 /*Anthony - Contact us*/
 
 /*Kevin - Sign up*/
-body{
+.signupbody{
    
     font-family:Tahoma, Arial, sans-serif;
     font-size: 16px;
@@ -216,7 +196,7 @@ body{
     padding-bottom: 10px;
 }
 
-input{
+.signupinput{
     display:block;
     text-align: center;
     height:30px;
@@ -245,13 +225,13 @@ input{
 .textdiv{
     margin-bottom: 20px;
 }
-h1{
+.signuph1{
     text-align: center;
     color:white;
     font-size: 50px;
 
 }
-p{
+.signupp{
     text-align: center;
     color:white;
     font-style: italic;
@@ -266,6 +246,6 @@ p{
 
 
 /*Larry - Site map*/
-.site-map {
-
+.site-map li{
+    margin: 10px 0;
 }
