@@ -71,6 +71,8 @@
     color: white;
 }
 
+
+
 /*Anthony - Self-test*/
 .box {
     background-color: #f9f9f9;
@@ -162,11 +164,28 @@ footer span.copyright {
 /*Jake - FAQ*/
 
 /*Anqi - Privacy policy*/
+.privacy{
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+
+.privacy-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.privacy-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+}
 
 /*Anthony - Contact us*/
 
 /*Kevin - Sign up*/
-body{
+.signupbody{
    
     font-family:Tahoma, Arial, sans-serif;
     font-size: 16px;
@@ -177,7 +196,7 @@ body{
     padding-bottom: 10px;
 }
 
-input{
+.signupinput{
     display:block;
     text-align: center;
     height:30px;
@@ -206,13 +225,13 @@ input{
 .textdiv{
     margin-bottom: 20px;
 }
-h1{
+.signuph1{
     text-align: center;
     color:white;
     font-size: 50px;
 
 }
-p{
+.signupp{
     text-align: center;
     color:white;
     font-style: italic;
