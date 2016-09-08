@@ -1,3 +1,47 @@
+﻿<<<<<<< HEAD
+﻿/*General*/
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #FCFCFC;
+}
+
+.container {
+    min-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    cursor: auto;
+}
+
+button.rnd-btn {
+    border-radius: 10px;
+    padding: 0 40px;
+    color: white;
+    background-color: #689F38;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+}
+
+ul.hor-list {
+    display: inline;
+}
+
+ul.hor-list > li {
+    display: inline;
+}
+
+ul.hor-list li + li:before {
+    content: '•';
+    margin-right: 3px;
+    padding: 0 3px;
+    font-family: Arial, serif;
+    color: #bbb;
+}
+
+=======
+>>>>>>> origin/master
 /*Larry - Navigation*/
 .nav-bar {
     display: flex;
@@ -162,6 +206,22 @@ footer span.copyright {
 }
 
 /*Jake - FAQ*/
+.FAQ{
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+.FAQ-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    
+.FAQ-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
+
 
 /*Anqi - Privacy policy*/
 .privacy{
@@ -179,7 +239,7 @@ footer span.copyright {
 .privacy-title {
     font-family:Tahoma, Arial, sans-serif;
     font-size: 24px;
-    line-height: 50px;
+    line-height: 48px;
 }
 
 /*Anthony - Contact us*/
