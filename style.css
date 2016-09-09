@@ -23,10 +23,38 @@
 
 .nav-bar > ul > li {
     margin: 0 8px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.nav-bar > ul.right > li:hover{
+    font-size: 110%;
+}
+
+.nav-bar img{
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+.nav-bar img:hover{
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
 }
 
 .nav-bar .brand {
     font-size: 24px;
+}
+
+.nav-bar .rnd-btn {
+    height: 16px;
+    margin-top: -7px;
+    font-size: 1em;
+    padding: 6px 18px 12px;
 }
 
 /*Anqi - Banner*/
@@ -69,6 +97,7 @@
     vertical-align: middle;
     text-shadow: 2px 2px 2px black;
     color: white;
+    font-size: 3em;
 }
 
 
@@ -82,7 +111,6 @@
 .box2 {
     margin: 0 200px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 60px;
     display: flex;
 }
@@ -168,15 +196,12 @@ footer span.copyright {
     padding-left: 120px;
 }
 .FAQ-title {
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 24px;
     line-height: 50px;
-    
-.FAQ-text {
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+}
 
+.FAQ-text {
+    line-height: 20px;
+}
 
 
 /*Anqi - Privacy policy*/
@@ -200,66 +225,13 @@ footer span.copyright {
 
 /*Anthony - Contact us*/
 
-/*Kevin - Sign up*/
-.signupbody{
-   
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 16px;
+/*Kevin - Sign up & login*/
+.signup-content, .login-content{
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px 0;
 }
-.signup-content{
-    background-color: #E8EAF6;
-    padding-top:20px;
-    padding-bottom: 10px;
-}
-
-.signupinput{
-    display:block;
-    text-align: center;
-    height:30px;
-    margin:0 auto;
-    padding:5px;
-    width:20%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-.login{
-    display:block;
-   margin:0 auto;
-   border: none;
-   border-style: solid;
-   border-width: 1px;
-   margin-bottom: 10px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.textdiv{
-    margin-bottom: 20px;
-}
-.signuph1{
-    text-align: center;
-    color:white;
-    font-size: 50px;
-
-}
-.signupp{
-    text-align: center;
-    color:white;
-    font-style: italic;
-}
-.signup{
-    background-color: black;
-    height:100px;
-    padding-top:20px;
-}
-
-
-
 
 /*Larry - Site map*/
 .site-map li{

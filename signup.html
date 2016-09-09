@@ -7,39 +7,119 @@
 	<link href="css/general.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="signupbody">
-	<div class="signup">
-		<h1 class="signuph1">Please sign up here</h1>
-		<br class="sigunupbr">
-		<p class="signupp">Fill in your detailed information</p>
-	</div>
-	<div class="signup-content">
-		<form method="post" class="form-signup" action="">
-			<div class="textdiv">
-				<input type="text" class="signupinput" name="username" id="username" placeholder="Username" autocomplete="off">
+<body>
+
+<!--Larry - Navigation-->
+<nav class="nav-bar">
+
+	<ul class="left">
+		<li>
+			<img src="img/icon-nav.png">
+		</li>
+		<li>
+			<a class="brand" href="index.html">
+				Stroke<br><b>Defender</b>
+			</a>
+		</li>
+	</ul>
+	<ul class="right">
+		<li>
+			<a href="index.html">About stroke</a>
+			<ul></ul>
+		</li>
+		<li>
+			<a href="index.html">What we do</a>
+		</li>
+		<li>
+			<a href="index.html">How you can help</a>
+		</li>
+		<li>
+			<a class="rnd-btn" href="login.html">Login</a>
+		</li>
+		<li>
+			<a class="rnd-btn" href="signup.html">Sign up</a>
+		</li>
+	</ul>
+</nav>
+
+
+<!--Anqi - Banner-->
+<div class="banner">
+	<img class="banner-img" src="img/sunset-banner.jpg">
+	<h1 class="banner-heading">Sign up</h1>
+</div>
+
+<div class="signup-content shadow">
+	<form method="post" class="form-signup" action="">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" name="username" id="username" placeholder="Username">
+		</div>
+		<div class="form-control">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="Password">
+		</div>
+		<div class="form-control">
+			<label for="verify-password">Password again</label>
+			<input type="password" name="verify-password" id="verify-password" placeholder="Verify Password">
+		</div>
+		<div class="form-control">
+			<label for="first-name">First Name</label>
+			<input type="text" name="first-name" id="first-name" placeholder="First name">
+		</div>
+		<div class="form-control">
+			<label for="last-name">Last Name</label>
+			<input type="text" name="last-name" id="last-name" placeholder="Last name">
+		</div>
+		<div class="form-control">
+			<label for="e-mail">E-mail Address</label>
+			<input type="text" name="e-mail" id="e-mail" placeholder="E-mail address">
+		</div>
+		<div class="form-control">
+			<button class="shadow" type="submit">Register</button>
+		</div>
+	</form>
+</div>
+
+
+<!--Jake - Footer-->
+<footer>
+		<div class="footer-links">
+			<div class="footer-column">
+				<h6>QUICK LINKS</h6>
+				<ul>
+					<li><a href="#">What is stroke?</a></li>
+					<li><a href="#">How to identify stroke?</a></li>
+					<li><a href="#">What is Integrative Medicine?</a></li>
+					<li><a href="#">Suggested hospitals.</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
 			</div>
-			<div class="textdiv">
-				<input type="password" class="signupinput" name="password" id="password" placeholder="Password" autocomplete="off">
+			<div class="footer-column">
+				<h6>RELATED SITES</h6>
+				<ul>
+					<li><a href="http://strokefoundation.com.au/">Stroke Foundation</a></li>
+					<li><a href="http://www.stroke.org/">National Stroke Association</a></li>
+					<li><a href="http://www.strokeassociation.org/">American Stroke Association</a></li>
+				</ul>
 			</div>
-			<div class="textdiv">
-				<input type="password" class="signupinput" name="verifypassword" id="verifypassword" placeholder="Verify Password" autocomplete="off">
+			<div class="footer-column">
+				<h6>ABOUT US</h6>
+				<ul>
+					<li><a href="#">Our purpose</a></li>
+					<li><a href="about.html">Our team</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
 			</div>
-			<div class="textdiv">
-				<input type="text" class="signupinput" name="firstname" id="firstname" placeholder="Firstname" autocomplete="off">
-			</div>
-			<div class="textdiv">
-				<input type="text" class="signupinput" name="lastname" id="lastname" placeholder="Lastname" autocomplete="off">
-			</div>
-			<div class="textdiv">
-				<input type="text" class="signupinput" name="e-mail" id="e-mail" placeholder="E-mail address" autocomplete="off">
-			</div>
-			<div class="submitdiv">
-				<button type="submit" class="login">Register</button>
-			</div>
-			<div class="submitdiv">
-				<button type="submit" class="login">reset</button>
-			</div>
-		</form>
-	</div>
+		</div>
+		<hr>
+		<div class="footer-bottom">
+			<span class="copyright">Copyright © 2016 Stroke Defender Inc. All rights reserved.</span>
+			<ul class="hor-list">
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="sitemap.html">Site Map</a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>

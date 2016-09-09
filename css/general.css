@@ -43,19 +43,29 @@ h6 {
     margin: 2.33em 0;
 }
 
+p {
+    font-size: 1em;
+}
+
 a {
     text-decoration: none;
     cursor: auto;
+    color: #00BFA5;
 }
 
-button.rnd-btn {
+.rnd-btn {
     border-radius: 10px;
     padding: 0 40px;
-    color: white;
+    color: white !important;
     background-color: #689F38;
     height: 60px;
     font-size: 24px;
     border: none;
+}
+
+a.rnd-btn {
+    display: inline-block;
+    padding: 18px 40px;
 }
 
 ul.hor-list {
@@ -74,6 +84,36 @@ ul.hor-list li + li:before {
     color: #bbb;
 }
 
-a {
-    color: #00BFA5;
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control {
+    margin: 30px;
+}
+
+.form-control label{
+    color: #999;
+}
+
+.form-control input {
+    display:block;
+    height:30px;
+    margin: 5px 0;
+    padding:5px;
+    width:100%;
+    font-size: 1.33em;
+    border: none;
+    border-bottom: 3px solid #E91E63;
+    box-sizing: border-box;
+}
+
+.form-control button{
+    display:block;
+    margin: 0 auto 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
