@@ -1,47 +1,3 @@
-﻿<<<<<<< HEAD
-﻿/*General*/
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #FCFCFC;
-}
-
-.container {
-    min-width: 1000px;
-}
-
-a {
-    text-decoration: none;
-    cursor: auto;
-}
-
-button.rnd-btn {
-    border-radius: 10px;
-    padding: 0 40px;
-    color: white;
-    background-color: #689F38;
-    height: 60px;
-    font-size: 24px;
-    border: none;
-}
-
-ul.hor-list {
-    display: inline;
-}
-
-ul.hor-list > li {
-    display: inline;
-}
-
-ul.hor-list li + li:before {
-    content: '•';
-    margin-right: 3px;
-    padding: 0 3px;
-    font-family: Arial, serif;
-    color: #bbb;
-}
-
-=======
->>>>>>> origin/master
 /*Larry - Navigation*/
 .nav-bar {
     display: flex;
@@ -67,10 +23,38 @@ ul.hor-list li + li:before {
 
 .nav-bar > ul > li {
     margin: 0 8px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.nav-bar > ul.right > li:hover{
+    font-size: 110%;
+}
+
+.nav-bar img{
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+.nav-bar img:hover{
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
 }
 
 .nav-bar .brand {
     font-size: 24px;
+}
+
+.nav-bar .rnd-btn {
+    height: 16px;
+    margin-top: -7px;
+    font-size: 1em;
+    padding: 6px 18px 12px;
 }
 
 /*Anqi - Banner*/
@@ -113,6 +97,7 @@ ul.hor-list li + li:before {
     vertical-align: middle;
     text-shadow: 2px 2px 2px black;
     color: white;
+    font-size: 3em;
 }
 
 
@@ -126,7 +111,6 @@ ul.hor-list li + li:before {
 .box2 {
     margin: 0 200px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 60px;
     display: flex;
 }
@@ -212,15 +196,12 @@ footer span.copyright {
     padding-left: 120px;
 }
 .FAQ-title {
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 24px;
     line-height: 50px;
-    
-.FAQ-text {
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+}
 
+.FAQ-text {
+    line-height: 20px;
+}
 
 
 /*Anqi - Privacy policy*/
@@ -242,68 +223,78 @@ footer span.copyright {
     line-height: 48px;
 }
 
-/*Anthony - Contact us*/
+/*Kevin - Contact us*/
+.contactus-content{
+ padding:10px 15px 50px 15px;
+ background: url("img/grass-background.jpg") right;
 
-/*Kevin - Sign up*/
-.signupbody{
-   
-    font-family:Tahoma, Arial, sans-serif;
-    font-size: 16px;
 }
-.signup-content{
-    background-color: #E8EAF6;
-    padding-top:20px;
-    padding-bottom: 10px;
+.contact-information{
+    display: inline-block;
 }
-
-.signupinput{
-    display:block;
+.contacth1{
     text-align: center;
-    height:30px;
-    margin:0 auto;
-    padding:5px;
-    width:20%;
-    border: 1px solid #ccc;
+    font-size: 5em;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    margin-top:30px;
+    color:white;
+}
+.contacth3{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color:white;
+}
+.contacth3form{
+    letter-spacing: 2px;
+    margin:5px;
+    color:white;
+}
+
+.contactp{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color:white;
+}
+
+.feedbackformarea{
+    border-radius: 5px;
+    border: 2px solid white;
+    
+    padding: 10px;
+    float:right;
+    padding-left: 40px;
+    width:40%;
+}
+
+.feedbackinput{
+width: 80%;
+ border: 2px solid white;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 15px;
+    margin-bottom: 5px;
+    
 }
-.login{
-    display:block;
-   margin:0 auto;
-   border: none;
-   border-style: solid;
-   border-width: 1px;
-   margin-bottom: 10px;
-    background-color: #4CAF50;
+.feedbacksubmit{
+background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-.textdiv{
-    margin-bottom: 20px;
-}
-.signuph1{
-    text-align: center;
-    color:white;
-    font-size: 50px;
-
-}
-.signupp{
-    text-align: center;
-    color:white;
-    font-style: italic;
-}
-.signup{
-    background-color: black;
-    height:100px;
-    padding-top:20px;
-}
 
 
-
+/*Kevin - Sign up & login*/
+.signup-content, .login-content{
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px 0;
+}
 
 /*Larry - Site map*/
 .site-map li{
