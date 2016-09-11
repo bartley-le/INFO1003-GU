@@ -300,3 +300,22 @@ background-color: #4CAF50;
 .site-map li{
     margin: 10px 0;
 }
+
+/*Anqi - About us*/
+.about {
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+
+.about-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.about-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+}
