@@ -132,7 +132,7 @@
 }
 
 .section-content > * {
-    padding: 10px;
+    margin: 10px;
     color: white;
 }
 
@@ -195,11 +195,11 @@ footer span.copyright {
     padding-bottom: 50px;
     padding-left: 120px;
 }
-.FAQ-title {
+.FAQ h3 {
     line-height: 50px;
 }
 
-.FAQ-text {
+.FAQ p {
     line-height: 20px;
 }
 
@@ -237,3 +237,9 @@ footer span.copyright {
 .site-map li{
     margin: 10px 0;
 }
+
+.site-map li>ul {
+    text-indent: 25px;
+}
+
+

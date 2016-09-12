@@ -45,6 +45,9 @@ h6 {
 
 p {
     font-size: 1em;
+    display: block;
+    margin: 1em 0;
+
 }
 
 a {
