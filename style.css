@@ -223,7 +223,70 @@ footer span.copyright {
     line-height: 48px;
 }
 
-/*Anthony - Contact us*/
+/*Kevin - Contact us*/
+.contactus-content{
+ padding:10px 15px 50px 15px;
+ background: url("img/grass-background.jpg") right;
+
+}
+.contact-information{
+    display: inline-block;
+}
+.contacth1{
+    text-align: center;
+    font-size: 5em;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    margin-top:30px;
+    color:white;
+}
+.contacth3{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color:white;
+}
+.contacth3form{
+    letter-spacing: 2px;
+    margin:5px;
+    color:white;
+}
+
+.contactp{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color:white;
+}
+
+.feedbackformarea{
+    border-radius: 5px;
+    border: 2px solid white;
+    
+    padding: 10px;
+    float:right;
+    padding-left: 40px;
+    width:40%;
+}
+
+.feedbackinput{
+width: 80%;
+ border: 2px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    
+}
+.feedbacksubmit{
+background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 /*Kevin - Sign up & login*/
 .signup-content, .login-content{
@@ -243,3 +306,21 @@ footer span.copyright {
 }
 
 
+/*Anqi - About us*/
+.about {
+    width: 800px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+}
+
+.about-text {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.about-title {
+    font-family:Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+}
