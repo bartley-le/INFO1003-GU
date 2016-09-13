@@ -1,11 +1,20 @@
 /*Larry - Navigation*/
+body {
+    padding-top: 64px;
+}
+
 .nav-bar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    width: 80%;
     height: 48px;
     font-size: 24px;
-    padding: 8px 50px;
+    margin-top: -64px;
+    padding: 8px 10%;
     border-bottom: 1px solid #DDD;
+    background: white;
+    z-index: 50;
 }
 
 .nav-bar a {
@@ -314,13 +323,11 @@ background-color: #4CAF50;
 }
 
 .about-text {
-    font-family:Tahoma, Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
 
 .about-title {
-    font-family:Tahoma, Arial, sans-serif;
     font-size: 24px;
     line-height: 48px;
 }
