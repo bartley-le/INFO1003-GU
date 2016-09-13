@@ -10,7 +10,7 @@ function login(username, password) {
 
 function signOut(){
     writeCookie("login", "", 0);
-    setUpNavBar();
+    location.reload();
 }
 
 function signUp(username, password, email, firstName, lastName) {
