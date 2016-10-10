@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="selfTestStyle.css" rel="stylesheet">
+    <script src="selftestfunction.js"></script>
+    <title>Stroke Defender</title>
+</head>
+
+<body>
+<!--Navigation-->
+<nav class="nav-bar">
+
+    <ul class="left">
+        <li>
+            <img src="img/icon-nav.png">
+        </li>
+        <li>
+            <a class="brand" href="index.html">
+                Stroke<br><b>Defender</b>
+            </a>
+        </li>
+    </ul>
+    <ul class="right">
+        <li>
+            <a href="index.html">About stroke</a>
+            <ul></ul>
+        </li>
+        <li>
+            <a href="index.html">What we do</a>
+        </li>
+        <li>
+            <a href="index.html">How you can help</a>
+        </li>
+        <li>
+            <a class="rnd-btn" href="login.html">Login</a>
+        </li>
+        <li>
+            <a class="rnd-btn" href="signup.html">Sign up</a>
+        </li>
+    </ul>
+</nav>
+<!-- Contact us -->
+<div class="selftestcontainer">
+    <form class="selftestform" onsubmit="confirmInput()">
+    <fieldset>
+        <h1>Test how much likelihood you will get stroke</h1>
+        <label for="q1" class="questions">1.Is your belly big?<br></label>
+        <ol>
+            <li>
+                <input type="radio" class="radio" id="very" name="usage1" value=3 />
+                <label class="q1 q" for="very">Very big</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="little" name="usage1" value=2 />
+                <label class="q1 q" for="little">A little big</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="not" name="usage1" value=0 />
+                <label class="q1 q" for="not">Not big</label>
+            </li>
+        </ol>
+       
+        <label for="q2" class="questions">2.How about your blood pressure,nomarlly?<br></label>
+        <ol>
+            <li>
+                <input type="radio" class="radio" id="140" name="usage2" value=4 />
+                <label class="q2 q" for="140">Over than 140/90mmHg</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="120" name="usage2" value=2 />
+                <label class="q2 q" for="120">around 120/80mmHg</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="nm" name="usage2" value=0 />
+                <label class="q2 q" for="nm">Normal</label>
+            </li>
+        </ol>
+
+        <label for="q3" class="questions">3.How often do you drink/go to party?<br></label>
+        <ol>
+            <li>
+                <input type="radio" class="radio" id="15" name="usage3" value=6 />
+                <label class="q3 q" for="15">Over 15 times a week</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="8" name="usage3" value=4 />
+                <label class="q3 q" for="8">8-14 times a week</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="1" name="usage3" value=0 />
+                <label class="q3 q" for="1">less than one time per day</label>
+            </li>
+        </ol>
+        
+        <label for="q4" class="questions">4.Have you ever gotten diseases as shown below?<br></label>
+        <ol>
+            <li>
+                <input type="radio" class="radio" id="xinfangxianchan" name="usage4" value=6 />
+                <label class="q4 q" for="xinfangxianchan">atrial fibrillation</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="guanxinbing" name="usage4" value=5  />
+                <label class="q4 q" for="guanxinbing">coronary disease</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="tangniaobing" name="usage4" value=3 />
+                <label class="q4 q" for="tangniaobing">diabetes mellitus</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="jiazushi" name="usage4" value=1 />
+                <label class="q4 q" for="jiazushi">choke family history</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="jiankang" name="usage4" value=0 />
+                <label class="q4 q" for="jiankang">I'm healthy!</label>
+            </li>
+        </ol>
+
+        <label for="q5" class="questions">5.How often do you do exercises per week?<br></label>
+        <ol>
+            <li>
+                <input type="radio" class="radio" id="3orless" name="usage5" value=3 />
+                <label class="q5 q" for="3orless">3 times or less per week</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="3to5" name="usage5" value=2 />
+                <label class="q5 q" for="3to5">3 to 5 times per week</label>
+            </li>
+            <li>
+                <input type="radio" class="radio" id="evd" name="usage5" value=0 />
+                <label class="q5 q" for="evd">everyday!</label>
+            </li>
+        </ol>
+            <input id="seeresult" class="seeresult" type="submit" value="See the result">
+        </fieldset>
+    </form>
+
+<!--Footer-->
+<footer>
+    <div class="footer-links">
+        <div class="footer-column">
+            <h6>QUICK LINKS</h6>
+            <ul>
+                <li><a href="faq-articles/what-is-stroke.html">What is stroke?</a></li>
+                <li><a href="faq-articles/symptoms.html">How to identify stroke?</a></li>
+                <li><a href="faq-articles/treatments.html">What is Integrative Medicine?</a></li>
+                <li><a href="#">Suggested hospitals.</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h6>RELATED SITES</h6>
+            <ul>
+                <li><a href="http://strokefoundation.com.au/">Stroke Foundation</a></li>
+                <li><a href="http://www.stroke.org/">National Stroke Association</a></li>
+                <li><a href="http://www.strokeassociation.org/">American Stroke Association</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h6>ABOUT US</h6>
+            <ul>
+                <li><a href="about.html">Our team & purpose</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <span class="copyright">Copyright © 2016 Stroke Defender Inc. All rights reserved.</span>
+        <ul class="hor-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+    </div>
+</footer>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -34,10 +34,10 @@
             <a href="index.html">How you can help</a>
         </li>
         <li>
-            <a class="rnd-btn" href="login.html">Login</a>
+            <a class="rnd-btn" href="login.html" id="user-login">Login</a>
         </li>
         <li>
-            <a class="rnd-btn" href="signup.html">Sign up</a>
+            <a class="rnd-btn" href="signup.html" id="user-sign-up">Sign up</a>
         </li>
     </ul>
 </nav>
@@ -50,7 +50,7 @@
 </div>
 
 <div class="login-content shadow">
-    <form method="post" class="form-signup" action="">
+    <form name="form-login" onsubmit="return loginForm()">
         <div class="form-control">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" placeholder="Username">
@@ -72,9 +72,9 @@
         <div class="footer-column">
             <h6>QUICK LINKS</h6>
             <ul>
-                <li><a href="#">What is stroke?</a></li>
-                <li><a href="#">How to identify stroke?</a></li>
-                <li><a href="#">What is Integrative Medicine?</a></li>
+                <li><a href="faq-articles/what-is-stroke.html">What is stroke?</a></li>
+                <li><a href="faq-articles/symptoms.html">How to identify stroke?</a></li>
+                <li><a href="faq-articles/treatments.html">What is Integrative Medicine?</a></li>
                 <li><a href="#">Suggested hospitals.</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
@@ -90,11 +90,11 @@
         <div class="footer-column">
             <h6>ABOUT US</h6>
             <ul>
-                <li><a href="#">Our purpose</a></li>
-                <li><a href="about.html">Our team</a></li>
+                <li><a href="about.html">Our team & purpose</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
+
     </div>
     <hr>
     <div class="footer-bottom">
@@ -105,5 +105,6 @@
         </ul>
     </div>
 </footer>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

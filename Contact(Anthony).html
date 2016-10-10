@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="Style(Anthony).css">
+        <script>
+			function alertBox()
+			{
+				alert("Your message has been sent successfully! We will reply as soon as posssible!");
+			}
+		</script>
+        
+    </head>
+    
+    <body>
+    
+    	<div style="position:relative;">
+        	<img src="1.JPG" class="ContactBG"/>
+            <div class="position1">
+             	<p><h1>Contact Us</h1></p>
+        	</div>
+        </div>
+        
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="position2">
+                <div class="row">
+                    <label for="name">Your name:</label><br />
+                    <input id="name" name="name" type="text" value="" size="30" /><br />
+                </div>
+                
+                <div class="row">
+                    <label for="email">Your email:</label><br />
+                    <input id="email" name="email" type="text" value="" size="30" /><br />
+                </div>
+                
+                <div class="row">
+                    <label for="message">Your message:</label><br />
+                    <textarea id="message" name="message" rows="7" cols="30"></textarea><br />
+                </div>
+            
+                <input id="submit_button" type="submit" value="Send message" onclick="alertBox()"/>
+            </div>
+        </form>	
+        					
+    </body>
+</html>
