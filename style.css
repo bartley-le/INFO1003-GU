@@ -232,6 +232,10 @@ footer span.copyright {
     line-height: 48px;
 }
 
+/* game */
+.canvas{
+    background-color: #f1f1f1;
+}
 /*Kevin - Contact us*/
 .contactus-content{
  padding:10px 15px 50px 15px;
