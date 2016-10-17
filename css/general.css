@@ -124,7 +124,7 @@ ul.hor-list li + li:before {
     padding-left: 20px;
 }
 
-.form-control button{
+.form-control button, button.btn-material {
     display:block;
     margin: 0 auto 10px;
     background-color: #4CAF50;
@@ -132,4 +132,10 @@ ul.hor-list li + li:before {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.block-center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }

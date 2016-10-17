@@ -343,3 +343,9 @@ background-color: #4CAF50;
 .PS3{
 	padding-left:210px;
 }
+
+/* Anqi - Game */
+.game * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

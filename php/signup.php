@@ -22,7 +22,7 @@ $email = $_POST["e-mail"];
 //   - A variable containing a connection to the database
 //   - An SQL query (containing $1, $2, ... in place of values passed in by the user)
 //   - An array containing variables to be used in place of $1, $2, ...
-$result = pg_insert($db, 'users', array("username" => $username, "first_name" => "$firstName", "last_name" => "$lastName", "email" => "$email", "password" => "$password", "color" => "#FFF"));
+$result = pg_insert($db, 'users', array("username" => $username, "first_name" => "$firstName", "last_name" => "$lastName", "email" => "$email", "password" => "$password", "color" => "#FFFFFF"));
 
 // Check the result of the query and write appropriate output.
 // pg_fetch_row returns a row from a database query as an array, or false if no rows are left

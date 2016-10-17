@@ -1,17 +1,9 @@
-$("nav").load("nav.html", null, setUpNavBar);
+$("nav").load("nav.html", null, setUp);
 $("footer").load("footer.html");
 
 function signOut(){
     writeCookie("login", "", 0);
     location.reload();
-}
-
-function signUp(username, password, email, firstName, lastName) {
-    writeCookie("username", username, 10);
-    writeCookie("password", password, 10);
-    writeCookie("email", email, 10);
-    writeCookie("firstName", firstName, 10);
-    writeCookie("lastName", lastName, 10);
 }
 
 function readCookie(name) {
@@ -35,7 +27,7 @@ function writeCookie(name, value, days) {
     document.cookie = name + "=" + value + "; " + expires;
 }
 
-function setUpNavBar() {
+function setUp() {
     var username = readCookie("username");
     if (username) {
         var signUpAnchor = $("#user-sign-up");
@@ -45,6 +37,8 @@ function setUpNavBar() {
         signUpAnchor.text("Sign out");
         signUpAnchor.attr("href", "javascript: signOut();");
     }
+    var color = localStorage.getItem("color");
+    document.body.style.background = color ? color : "#FFF";
 }
 
 
@@ -53,7 +47,6 @@ function loginForm() {
     $.post("php/login.php",
         form.serialize(),
         function (data) {
-
             if (data === "success") {
                 writeCookie("login", "true", 1);
                 writeCookie("username", form.find('input[name="username"]').val(), 1);
@@ -69,7 +62,7 @@ function loginForm() {
 
 function signUpForm() {
     var form = $("form[name=form-sign-up]");
-    if (form["password"].value != form["verify-password"].value){
+    if (form.find('input[name="password"]').val() != form.find('input[name="verify-password"]').val()) {
         alert("Two passwords are not the same, please enter again.");
         return false;
     }
@@ -88,4 +81,21 @@ function signUpForm() {
     return false;
 }
 
-
+function setPreference() {
+    var form = $("form[name=form-preferences]");
+    var color = form.find('input[name=color]').val();
+    localStorage.setItem("color", color);
+    $.post("php/update-pref.php",
+        form.serialize(),
+        function (data) {
+            if (data === "success") {
+                location.reload();
+                alert("Preference was set successfully!");
+            } else {
+                console.log(data);
+                alert("Preference was failed to update. Please try again.");
+            }
+        }
+    );
+    return false;
+}

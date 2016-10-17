@@ -1,8 +1,11 @@
+<?php
+$db = pg_connect("host=soit-db-pro-2.ucc.usyd.edu.au port=5432 dbname=y16info1003s02g31 user=y16info1003s02g31 password=UnG2Q2Ae");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign up</title>
+    <title>Preferences</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
@@ -50,12 +53,28 @@
     <img class="banner-img" src="img/sunset-banner.jpg">
     <h1 class="banner-heading">Preferences</h1>
 </div>
-
+<?php
+$result = pg_query_params($db, 'SELECT * FROM users WHERE username = $1', array("$_COOKIE[username]"));
+$row = pg_fetch_row($result);
+if (!$row) {
+    header("Location: " . "login.html", true, 301);
+    die();
+}
+?>
 <div class="preferences-content shadow">
-    <form class="user-form">
+
+    <form class="user-form" name="form-preferences" onsubmit="return setPreference()">
+        <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input name="first-name" id="first-name" value="<?php echo $row[2] ?>">
+        </div>
+        <div class="form-control">
+            <label for="last-name">Last Name</label>
+            <input name="last-name" id="last-name" value="<?php echo $row[3] ?>">
+        </div>
         <div class="form-control">
             <label for="color">Background Color</label>
-            <input name="color" id="color" type="color" value="#ffffff">
+            <input name="color" id="color" type="color" value="<?php echo $row[5] ?>">
         </div>
         <div class="form-control">
             <button type="submit">Save</button>
