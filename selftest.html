@@ -3,9 +3,8 @@
 <head>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="selfTestStyle.css" rel="stylesheet">
-    <script src="selftestfunction.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/selftest.js"></script>
     <title>Stroke Defender</title>
 </head>
 
@@ -42,103 +41,120 @@
         </li>
     </ul>
 </nav>
-<!-- Contact us -->
-<div class="selftestcontainer">
-    <form class="selftestform" onsubmit="confirmInput()">
-    <fieldset>
-        <h1>Test how much likelihood you will get stroke</h1>
-        <label for="q1" class="questions">1.Is your belly big?<br></label>
-        <ol>
-            <li>
-                <input type="radio" class="radio" id="very" name="usage1" value=3 />
-                <label class="q1 q" for="very">Very big</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="little" name="usage1" value=2 />
-                <label class="q1 q" for="little">A little big</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="not" name="usage1" value=0 />
-                <label class="q1 q" for="not">Not big</label>
-            </li>
-        </ol>
-       
-        <label for="q2" class="questions">2.How about your blood pressure,nomarlly?<br></label>
-        <ol>
-            <li>
-                <input type="radio" class="radio" id="140" name="usage2" value=4 />
-                <label class="q2 q" for="140">Over than 140/90mmHg</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="120" name="usage2" value=2 />
-                <label class="q2 q" for="120">around 120/80mmHg</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="nm" name="usage2" value=0 />
-                <label class="q2 q" for="nm">Normal</label>
-            </li>
-        </ol>
 
-        <label for="q3" class="questions">3.How often do you drink/go to party?<br></label>
-        <ol>
-            <li>
-                <input type="radio" class="radio" id="15" name="usage3" value=6 />
-                <label class="q3 q" for="15">Over 15 times a week</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="8" name="usage3" value=4 />
-                <label class="q3 q" for="8">8-14 times a week</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="1" name="usage3" value=0 />
-                <label class="q3 q" for="1">less than one time per day</label>
-            </li>
-        </ol>
-        
-        <label for="q4" class="questions">4.Have you ever gotten diseases as shown below?<br></label>
-        <ol>
-            <li>
-                <input type="radio" class="radio" id="xinfangxianchan" name="usage4" value=6 />
-                <label class="q4 q" for="xinfangxianchan">atrial fibrillation</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="guanxinbing" name="usage4" value=5  />
-                <label class="q4 q" for="guanxinbing">coronary disease</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="tangniaobing" name="usage4" value=3 />
-                <label class="q4 q" for="tangniaobing">diabetes mellitus</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="jiazushi" name="usage4" value=1 />
-                <label class="q4 q" for="jiazushi">choke family history</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="jiankang" name="usage4" value=0 />
-                <label class="q4 q" for="jiankang">I'm healthy!</label>
-            </li>
-        </ol>
+<!--Banner-->
+<div class="banner">
+    <img class="banner-img" src="img/sunset-banner.jpg">
+    <h1 class="banner-heading">Test how likely you will get stroke</h1>
+</div>
 
-        <label for="q5" class="questions">5.How often do you do exercises per week?<br></label>
-        <ol>
-            <li>
-                <input type="radio" class="radio" id="3orless" name="usage5" value=3 />
-                <label class="q5 q" for="3orless">3 times or less per week</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="3to5" name="usage5" value=2 />
-                <label class="q5 q" for="3to5">3 to 5 times per week</label>
-            </li>
-            <li>
-                <input type="radio" class="radio" id="evd" name="usage5" value=0 />
-                <label class="q5 q" for="evd">everyday!</label>
-            </li>
-        </ol>
-            <input id="seeresult" class="seeresult" type="submit" value="See the result">
-        </fieldset>
+<!-- Self Test -->
+<div class="self-test-container">
+    <form onsubmit="confirmInput()">
+        <div class="form-control">
+            <p>1. Is your belly big?</p>
+            <ul>
+                <li>
+                    <input type="radio" class="radio" id="very" name="usage1" value=3/>
+                    <label for="very">Very big</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="little" name="usage1" value=2/>
+                    <label for="little">A little big</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="not" name="usage1" value=0/>
+                    <label for="not">Not big</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-control">
+            <p>2. How about your blood pressure,nomarlly?<br></p>
+            <ul>
+                <li>
+                    <input type="radio" class="radio" id="140" name="usage2" value=4/>
+                    <label for="140">Over than 140/90mmHg</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="120" name="usage2" value=2/>
+                    <label for="120">around 120/80mmHg</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="nm" name="usage2" value=0/>
+                    <label for="nm">Normal</label>
+                </li>
+            </ul>
+        </div>
+        <div class="form-control">
+            <p>3.How often do you drink/go to party?</p>
+            <ul>
+                <li>
+                    <input type="radio" class="radio" id="15" name="usage3" value=6/>
+                    <label for="15">Over 15 times a week</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="8" name="usage3" value=4/>
+                    <label for="8">8-14 times a week</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="1" name="usage3" value=0/>
+                    <label for="1">less than one time per day</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-control">
+            <p>4. Have you ever gotten diseases as shown below?</p>
+            <ul>
+                <li>
+                    <input type="radio" class="radio" id="xinfangxianchan" name="usage4" value=6/>
+                    <label for="xinfangxianchan">atrial fibrillation</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="guanxinbing" name="usage4" value=5/>
+                    <label for="guanxinbing">coronary disease</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="tangniaobing" name="usage4" value=3/>
+                    <label for="tangniaobing">diabetes mellitus</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="jiazushi" name="usage4" value=1/>
+                    <label for="jiazushi">choke family history</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="jiankang" name="usage4" value=0/>
+                    <label for="jiankang">I'm healthy!</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-control">
+            <p>5. How often do you do exercises per week?</p>
+            <ul>
+                <li>
+                    <input type="radio" class="radio" id="3orless" name="usage5" value=3/>
+                    <label for="3orless">3 times or less per week</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="3to5" name="usage5" value=2/>
+                    <label for="3to5">3 to 5 times per week</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio" id="evd" name="usage5" value=0/>
+                    <label for="evd">everyday!</label>
+                </li>
+            </ul>
+        </div>
+        <div class="form-control">
+            <button type="submit">See the result</button>
+        </div>
+
     </form>
+</div>
 
-<!--Footer-->
+<!--Jake - Footer-->
 <footer>
     <div class="footer-links">
         <div class="footer-column">
@@ -147,7 +163,7 @@
                 <li><a href="faq-articles/what-is-stroke.html">What is stroke?</a></li>
                 <li><a href="faq-articles/symptoms.html">How to identify stroke?</a></li>
                 <li><a href="faq-articles/treatments.html">What is Integrative Medicine?</a></li>
-                <li><a href="#">Suggested hospitals.</a></li>
+                <li><a>Suggested hospitals.</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
@@ -177,6 +193,8 @@
         </ul>
     </div>
 </footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

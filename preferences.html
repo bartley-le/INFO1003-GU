@@ -1,14 +1,17 @@
-﻿<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/general.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <title>Stroke Defender</title>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
 </head>
-
 <body>
-<!--Navigation-->
+
+<!--Larry - Navigation-->
 <nav class="nav-bar">
 
     <ul class="left">
@@ -33,64 +36,32 @@
             <a href="index.html">How you can help</a>
         </li>
         <li>
-            <a class="rnd-btn" href="login.html">Login</a>
+            <a class="rnd-btn" href="login.html" id="user-login">Login</a>
         </li>
         <li>
-            <a class="rnd-btn" href="signup.html">Sign up</a>
+            <a class="rnd-btn" href="signup.html" id="user-sign-up">Sign up</a>
         </li>
     </ul>
 </nav>
 
 
-<!--Banner-->
+<!--Anqi - Banner-->
 <div class="banner">
     <img class="banner-img" src="img/sunset-banner.jpg">
-    <h1 class="banner-heading">Site Map</h1>
+    <h1 class="banner-heading">Preferences</h1>
 </div>
 
-<div class="site-map container">
-    <div>
-        <h2>Main Articles</h2>
-        <ul>
-            <li>
-                <a href="faq.html">FAQ</a>
-                <ul>
-                    <li><a href="faq-articles/what-is-stroke.html">What is stroke?</a></li>
-                    <li><a href="faq-articles/what-happens-during-a-stroke.html">What happens during a stroke?</a></li>
-                    <li><a href="faq-articles/key-factors.html">What are the risk factors for stroke?</a></li>
-                    <li><a href="faq-articles/treatments.html">Is there any treatment for stroke?</a></li>
-                    <li><a href="faq-articles/reduce-risk.html">What can I do to reduce my risk of stroke?</a></li>
-                    <li><a href="faq-articles/symptoms.html">What are the symptoms of a stroke?</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Suggested hospitals.</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div>
-        <h2>About Us</h2>
-        <ul>
-            <li><a href="about.html#purpose">Our Purpose</a></li>
-            <li><a href="about.html#team">Our Team</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div>
-        <h2>User Profile</h2>
-        <ul>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="#">Self-Test</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div>
-        <h2>Others</h2>
-        <ul>
-            <li><a href="privacy.html">Privacy policy</a></li>
-        </ul>
-    </div>
+<div class="preferences-content shadow">
+    <form class="user-form">
+        <div class="form-control">
+            <label for="color">Background Color</label>
+            <input name="color" id="color" type="color" value="#ffffff">
+        </div>
+        <div class="form-control">
+            <button type="submit">Save</button>
+        </div>
+
+    </form>
 </div>
 
 
@@ -135,6 +106,7 @@
 </footer>
 
 <script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

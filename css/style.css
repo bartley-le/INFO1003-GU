@@ -232,10 +232,14 @@ footer span.copyright {
     line-height: 48px;
 }
 
+/* game */
+.canvas{
+    background-color: #f1f1f1;
+}
 /*Kevin - Contact us*/
 .contactus-content{
  padding:10px 15px 50px 15px;
- background: url("img/grass-background.jpg") right;
+    background: url("../img/grass-background.jpg") right;
 
 }
 .contact-information{
@@ -296,9 +300,8 @@ background-color: #4CAF50;
     cursor: pointer;
 }
 
-
-/*Kevin - Sign up & login*/
-.signup-content, .login-content{
+/*Larry - Sign up & login*/
+.signup-content, .login-content, .preferences-content {
     background-color: white;
     width: 500px;
     margin: 20px auto;
@@ -331,6 +334,12 @@ background-color: #4CAF50;
     font-size: 24px;
     line-height: 48px;
 }
-.PS{
-	padding-left:20px;
+.PS1{
+	padding-left:100px;
+}
+.PS2{
+	padding-left:200px;
+}
+.PS3{
+	padding-left:210px;
 }

@@ -68,7 +68,7 @@ a {
 
 a.rnd-btn {
     display: inline-block;
-    padding: 18px 40px;
+    padding: 18px 40px 0;
 }
 
 ul.hor-list {
@@ -95,7 +95,7 @@ ul.hor-list li + li:before {
     margin: 30px;
 }
 
-.form-control label{
+.user-form .form-control label {
     color: #999;
 }
 
@@ -107,8 +107,21 @@ ul.hor-list li + li:before {
     width:100%;
     font-size: 1.33em;
     border: none;
-    border-bottom: 3px solid #E91E63;
     box-sizing: border-box;
+}
+
+.user-form .form-control input {
+    border-bottom: 3px solid #E91E63;
+}
+
+.form-control input[type=radio] {
+    display: inline;
+    width: initial;
+    height: initial;
+}
+
+.form-control ol, ul {
+    padding-left: 20px;
 }
 
 .form-control button{

@@ -1,6 +1,6 @@
 function confirmInput() {
     var sum=0;
-    var input = document.getElementsByClassName("radio")
+    var input = document.getElementsByClassName("radio");
     for(var i=0;i<input.length;i++){
     	if(input[i].checked){
     		sum+=parseInt(input[i].value)

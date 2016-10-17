@@ -5,7 +5,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link href="css/general.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
@@ -50,7 +50,7 @@
 </div>
 
 <div class="login-content shadow">
-    <form name="form-login" onsubmit="return loginForm()">
+    <form class="user-form" name="form-login" onsubmit="return loginForm()">
         <div class="form-control">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" placeholder="Username">
@@ -75,7 +75,7 @@
                 <li><a href="faq-articles/what-is-stroke.html">What is stroke?</a></li>
                 <li><a href="faq-articles/symptoms.html">How to identify stroke?</a></li>
                 <li><a href="faq-articles/treatments.html">What is Integrative Medicine?</a></li>
-                <li><a href="#">Suggested hospitals.</a></li>
+                <li><a>Suggested hospitals.</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
@@ -105,6 +105,8 @@
         </ul>
     </div>
 </footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
